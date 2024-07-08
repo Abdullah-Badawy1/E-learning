@@ -1,0 +1,283 @@
+#bar{
+    background-color:rgb(212, 246, 199);
+    box-shadow: 0 5px 15px rgba(246, 237, 237, 0.5);
+    z-index: 99;
+    width: 100%;
+    position: absolute;
+    top: -600px;
+    backdrop-filter: blur(5px);
+    transition: all 0.7s ease-out;  
+}
+#bar p{
+    margin-bottom: 0;
+}
+#bar.active{
+    top: 125px;
+}
+ #bar.inactive{
+    top: -600px;
+}
+#bar .bottom-bar-content a{
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+ #bar .bottom-bar-content p .fas {
+    font-size: 1.18em;
+    color: black;
+}
+ #bar .bottom-bar-content p{
+    border-bottom: 1px solid rgb(224, 210, 210);
+    padding: 8px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.middlebar #menu{
+    display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+    
+    .middlebar #menu{
+        display: inline-block;
+        font-size: 1.7em;
+        margin-left: 50px;
+    }
+    .middlebar ul{
+        display: none;
+    }
+    .middlebar button{
+        margin-left: auto;
+    }  
+}
+
+@media only screen and (max-width: 800px){
+    
+    .topbar .topbar-remove{
+        display: none;
+    }
+
+
+    .middlebar nav{
+        height: 91px;
+    }
+    .middlebar .v-name{
+       font-size: 20px;
+    }
+    .middlebar .navbar{
+        padding-left: 25px;
+        padding-right:25px;
+    }
+
+
+
+    .small-cardS{
+        height: 430px;
+    }
+    .small-card .row{
+        width: 100%;
+    }
+
+
+
+    #programe{
+        padding: 0;
+    }
+
+
+
+    .page3 .page3-container {
+        margin: 0 6%;
+    }
+    .page3 .headding h3{
+        font-size: 2em;
+    }
+    .page3 .circles .circle{
+        width: 150px;
+        height: 150px;
+        font-size: 14px;
+    }
+
+
+    .alumni{
+        margin: 0px;
+    }
+    .alumni h2{
+        font-size: 2.0em;
+        /* color: #28fa7c; */
+    }
+    .alumni p{
+        font-size: 1.1em;
+        /* color: #28fa7c; */
+    }
+
+
+
+    .footer .foot{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .column{
+        padding-bottom: 20px; 
+    }
+    .footer .column h3 {
+        font-size: 1.2em;
+        padding-bottom: 6px;
+    }
+    .footer .column p {
+        font-size: 1em;
+    }
+    .footer .column img {
+        padding-bottom: 9px;
+        height: 22px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .topbar{
+        display: none;
+    }
+
+
+    #bar.active{
+        top: 90px;
+    }
+     
+
+    #caro-cap .carousel-caption{
+        position: absolute;
+        bottom: 150px;
+        font-size: 1.2em;
+    }
+    
+
+
+
+    .middlebar{
+        height: 13.5vh;
+    }
+    .middlebar #menu{
+        display: inline-block;
+        margin-left: 0;
+    }
+    .middlebar nav{
+        /* height: 91px; */
+        
+    }
+    .middlebar .v-name{
+       display: none;
+    }
+    .middlebar .fas{
+        font-size: 1.7em;
+    }
+    .middlebar #menu{
+        font-size: 1.7em;
+    }
+    .middlebar .btn{
+        font-size: 1.1em;
+        margin: auto;
+    }
+
+
+
+    .small-cardS{
+        margin: 0;
+        padding: 0;
+        height: 760px;
+    }
+    .row{
+        margin: 0;
+        padding: 0;
+    }
+    .small-card .card{
+        max-width:100%;
+    }
+    .small-cardS .h1, h1{
+        font-size: 2em;
+    }
+    .small-cardS .h3, h3{
+        font-size: 1.5em;
+    }
+
+
+
+
+    .card-offer #card-demo2{
+        margin-bottom: 1rem!important;
+    }
+    .card-offer #card-demo1{
+        margin-bottom: 1rem!important;
+    }
+
+
+
+    .BlockContents h2{
+        font-size: 2em;
+    }
+    #programe .card{
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
+    }
+    
+
+
+    .page3 .page3-container {
+        margin: 0 6%;
+    }
+    .page3 .headding h3{
+        font-size: 1.9em;
+    }
+    .page3 .circles .circle{
+        width: 130px;
+        height: 130px;
+        font-size: 14px;
+        margin: 8px 0;
+    }
+    .page3 .circles{
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .page3 .page3-container{
+        padding-top: 33px;
+    }
+    .page3 .headding{
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+
+
+
+    .img-future .content{
+        flex-direction: column;
+    }
+   .bttn1{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .bttn2{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+
+    .footer .foot .first>img{
+        width: 143px;
+    }
+
+
+
+
+
+
+    .content-faculty .content{
+        margin: 15px;
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="./style/style1.css">
+    <script src="./js/dashboard.js" defer></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome, Doctor!</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="viewStudents()">View Students</a></li>
+                <li><a href="#" onclick="manageExams()">Manage Exams</a></li>
+                <li><a href="#" onclick="viewResults()">View Results</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+        <div id="content">
+            <!-- Content will be dynamically loaded here -->
+        </div>
+    </div>
+</body>
+</html>
+

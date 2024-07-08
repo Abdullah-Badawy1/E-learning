@@ -1,0 +1,68 @@
+/* Styling for the #quiz element */
+#quiz {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: white; /* Set the background color to white */
+  border: 5px solid #eeff41;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(24, 177, 49, 0.2);
+}
+
+/* Heading style */
+h1 {
+  text-align: center;
+  color: #333333;
+}
+
+/* Header styling */
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+/* Logo link style */
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  background-color: white; /* Set the background color of the logo to white */
+}
+
+/* Change the background color on mouse-over */
+.logo:hover {
+  background-color:white;
+  color: black;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Question and options styling */
+#question {
+  margin-bottom: 20px;
+}
+
+#options {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Button styling */
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8f8d8d;
+}

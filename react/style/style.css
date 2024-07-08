@@ -1,0 +1,111 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Core Layout */
+body, html {
+    height: 100%;
+    background: linear-gradient(to bottom, #a7c0cd, #e2ebf0); /* Subtle gradient background */
+    font-family: 'Arial', sans-serif; /* Ensuring font is Arial */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    text-align: center;
+}
+
+/* Login Container */
+.login-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Slightly more pronounced shadow */
+    padding: 40px;
+    width: 100%;
+    max-width: 400px; /* Max width for larger screens */
+    transition: transform 0.3s ease-in-out; /* Smooth transform on screen size change */
+}
+
+/* Logo Styles */
+.login-logo img {
+    width: 120px; /* Slightly smaller logo */
+    margin-bottom: 30px;
+}
+
+/* Form Container */
+.login-form-container {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px; /* Slightly larger heading */
+}
+
+/* Input Fields */
+.input-group input {
+    width: 100%;
+    padding: 12px 15px; /* Adjusted padding */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded borders for input */
+    font-size: 16px; /* Standard font size */
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 12px 15px; /* Uniform padding */
+    border: none;
+    border-radius: 5px; /* Consistent border radius with inputs */
+    background-color: #4CAF50; /* Slightly darker green */
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.login-btn:hover {
+    background-color: #45a049; /* Darken button on hover for feedback */
+}
+
+/* Utility Links */
+.login-utilities {
+    margin-top: 20px;
+}
+
+.utility-link {
+    color: #5cb85c;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.utility-link:hover {
+    color: #489648; /* Darken text on hover */
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+        transform: scale(0.9); /* Slightly reduce size to fit smaller screens */
+    }
+}

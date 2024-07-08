@@ -1,0 +1,24 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Questions</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Generated Questions</h1>
+        <ul class="list-group mt-4">
+            {% for question in questions %}
+            <li class="list-group-item">{{ question }}</li>
+            {% endfor %}
+        </ul>
+        <div class="text-center mt-4">
+            <a href="/download" class="btn btn-success">Download Questions as CSV</a>
+        </div>
+    </div>
+</body>
+</html>
